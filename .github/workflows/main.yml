@@ -7,7 +7,7 @@ env:
   CLUSTER_RESOURCE_GROUP: AlexRampUpTest
   NAMESPACE: default
   SECRET: AZURE_SP_464FB972
-  APP_NAME: AlexAPP20220531
+  APP_NAME: alexapp20220531
   
 jobs:
   build:
