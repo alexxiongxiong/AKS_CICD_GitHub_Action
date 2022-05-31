@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+# this is the metadata section
+metadata:
+  name: test-deployment
+  labels:
+    # here we define a key/value pair this has to match the selector below services also reference this label
+    app: nginx10086
+# this is the spec section
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx10086
+  # the following part is basically a configuration file inside a configuration file ( has its own metadata/spec sections )
+  # this is bascially the part of the configuration file that defines the pod
+  template:
+    metadata:
+      # same functionality as with the label above
+      labels:
+        app: nginx10086
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 10m
+            memory: 10Mi
+          limits:
+            cpu: 100m
+            memory: 250Mi
