@@ -6,7 +6,7 @@ env:
   CLUSTER_NAME: AlexRampUpTest
   CLUSTER_RESOURCE_GROUP: AlexRampUpTest
   NAMESPACE: default
-  SECRET: AZURE_SP_464FB972
+  SECRET: akscicdgithubaction
   APP_NAME: alexapp20220531
   
 jobs:
