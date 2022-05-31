@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: "nginx10086"
+spec:
+  selector:
+    app: "nginx10086"
+  ports:
+    - protocol: "TCP"
+      port: 1337
+      targetPort: 80
+  type: LoadBalancer
+  externalTrafficPolicy: Local
