@@ -5,8 +5,11 @@ env:
   REGISTRY_NAME: AlexRampUpTest
   CLUSTER_NAME: AlexRampUpTest
   CLUSTER_RESOURCE_GROUP: AlexRampUpTest
+# create namespace in AKS  
   NAMESPACE: default
+# create a secret resource in AKS used to store the credential of ACR  
   SECRET: akscicdgithubaction
+# APP_NAME is the repostory name of ACR  
   APP_NAME: alexapp20220531
   
 jobs:
