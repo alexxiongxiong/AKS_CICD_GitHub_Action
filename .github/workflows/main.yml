@@ -1,5 +1,11 @@
-on: [push]
+# on: [push]
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
 # Environment variables available to all jobs and steps in this workflow
 env:
   REGISTRY_NAME: AlexRampUpTest
