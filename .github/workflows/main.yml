@@ -4,6 +4,7 @@ on: [push]
 env:
   REGISTRY_NAME: AlexRampUpTest
   CLUSTER_NAME: AlexRampUpTest
+# The resource group where AKS is located 
   CLUSTER_RESOURCE_GROUP: AlexRampUpTest
 # create namespace in AKS  
   NAMESPACE: default
