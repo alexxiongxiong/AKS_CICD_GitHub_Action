@@ -8,7 +8,7 @@ on:
   
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: AlexRampUpTest
+  REGISTRY_NAME: alexrampuptest
   CLUSTER_NAME: AlexRampUpTest
 # The resource group where AKS is located 
   CLUSTER_RESOURCE_GROUP: AlexRampUpTest
