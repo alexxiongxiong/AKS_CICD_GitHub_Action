@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: alexrampuptest.azurecr.io/alexapp20220531
         ports:
         - containerPort: 80
         resources:
