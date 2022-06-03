@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: alexrampuptest.azurecr.io/alexapp20220531:${{ github.sha }}
+        image: alexrampuptest.azurecr.io/alexapp20220531:
         ports:
         - containerPort: 80
         resources:
